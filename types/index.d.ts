@@ -236,12 +236,22 @@ declare interface TransactionHistoryTableProps {
   page: number;
 }
 
+declare interface TransactionImportWizardProps {
+  transactions: Transaction[];
+}
+
 declare interface CategoryBadgeProps {
   category: string;
 }
 
 declare interface TransactionTableProps {
   transactions: Transaction[];
+}
+
+declare interface ImportTableProps {
+  transactions: Transaction[];
+  suggestedColumn?: number;
+  onColumnChange: (column: number) => void;
 }
 
 declare interface CategoryProps {

@@ -4,6 +4,7 @@ import React from 'react'
 import BankCard from './BankCard'
 import { countTransactionCategories } from '@/lib/utils'
 import Category from './Category'
+import { sidebarLinks, SidebarIndex} from '../constants/index'
 
 const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
   const categories: CategoryCount[] = countTransactionCategories(transactions);
@@ -30,7 +31,7 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
 
       <section className="banks">
         <div className="flex w-full justify-between">
-          <h2 className="header-2">My Banks</h2>
+          <h2 className="header-2">{sidebarLinks[SidebarIndex.Home].label}</h2>
           <Link href="/" className="flex gap-2">
             <Image 
                src="/icons/plus.svg"

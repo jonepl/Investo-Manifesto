@@ -15,12 +15,14 @@ const Copy = ({ title }: { title: string }) => {
     }, 2000);
   };
 
+  // open the modal
+
   return (
     <Button
       data-state="closed"
       className="mt-3 flex max-w-[320px] gap-4"
       variant="secondary"
-      onClick={copyToClipboard}
+      // onClick={copyToClipboard}
     >
       <p className="line-clamp-1 w-full max-w-full text-xs font-medium text-black-2">
         {title} test
@@ -39,8 +41,8 @@ const Copy = ({ title }: { title: string }) => {
           stroke-linejoin="round"
           className="mr-2 size-4"
         >
-          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
-          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
         </svg>
       ) : (
         <svg

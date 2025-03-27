@@ -1,3 +1,11 @@
+export enum SidebarIndex {
+  Home,
+  Portfolios,
+  Assets,
+  Accounts,
+  Settings,
+}
+
 export const sidebarLinks = [
   {
     imgURL: "/icons/home.svg",
@@ -7,18 +15,23 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/dollar-circle.svg",
     route: "/my-banks",
-    label: "My Banks",
+    label: "Portfolios",
   },
   {
     imgURL: "/icons/transaction.svg",
     route: "/transaction-history",
-    label: "Transaction History",
+    label: "Assets",
   },
   {
     imgURL: "/icons/money-send.svg",
     route: "/payment-transfer",
-    label: "Transfer Funds",
+    label: "Accounts",
   },
+  {
+    imgURL: "/icons/settings.svg",
+    route: "/settings",
+    label: "Settings",
+  }
 ];
 
 // good_user / good_password - Bank of America
